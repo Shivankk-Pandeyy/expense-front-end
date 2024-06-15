@@ -29,7 +29,7 @@ const Login=()=>{
         }
         else{
             try{
-                const response=await axios.post("https://expense-back-end.vercel.app/api/expenseLogin",data);
+                const response=await axios.post("https://expense-back-end.vercel.app/api/expense/Login",data);
                 navigate(`/DashBoard/${response.data.id}`);
             }
             catch(err){
