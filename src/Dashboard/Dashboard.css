@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+h2{
+    font-family: "Bebas Neue", sans-serif;
+}
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* HOMEPAGE */
+.D{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.D-header{
+    height: 10vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.D-header select{
+    height: 6vh;
+    width: 15%;
+    font-size: 1.25rem;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.D-header h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.D-dash{
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C1{
+    height: 82vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C-holder{
+    height: 82vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C2{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C3{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.wallet{
+    height: 82vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+.W1{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.W1 h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.W-wallet{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.W-wallet button{
+    height: 6vh;
+    width: 10%;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+}
+.W-wallet h2{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.W-wallet input{
+    height: 6vh;
+    width: 30%;
+    font-size: 1.25rem;
+}
+.W-wallet input:focus{
+    outline: none;
+}
+.W1 .red{
+    font-size: 2rem;
+    color: #ef233c;
+}
+.W1 .green{
+    font-size: 2rem;
+    color: #80ed99;
+}
+.W2{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.W-cart-spend{
+    min-height: 10vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+.W-cart-spend h2{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.W-cart-spend p{
+    font-size: 1rem;
+    color: #000000;
+}
+.W-cart-spend button{
+    height: 6vh;
+    width: 15%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.W-cart-save{
+    min-height: 10vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+.W-cart-save h2{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.W-cart-save p{
+    font-size: 1rem;
+    color: #000000;
+}
+.W-cart-save button{
+    height: 6vh;
+    width: 15%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+@media screen and (max-width:1200px) and (min-width:200px){
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+h2{
+    font-family: "Bebas Neue", sans-serif;
+}
+button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* HOMEPAGE */
+.D{
+    height: 184vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.D-header{
+    height: 20vh;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.D-header select{
+    height: 5vh;
+    width: 60%;
+    font-size: 1rem;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+}
+.D-header h2{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.D-dash{
+    height: 162vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C1{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C-holder{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C2{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.C3{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.wallet{
+    height: 165vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+.W1{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.W1 h2{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.W-wallet{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.W-wallet button{
+    height: 5vh;
+    width: 20%;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+}
+.W-wallet h2{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.W-wallet input{
+    height: 5vh;
+    width: 80%;
+    font-size: 1rem;
+}
+.W-wallet input:focus{
+    outline: none;
+}
+.W1 .red{
+    font-size: 1rem;
+    color: #ef233c;
+}
+.W1 .green{
+    font-size: 1rem;
+    color: #80ed99;
+}
+.W2{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.W-cart-spend{
+    min-height: 20vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+.W-cart-spend h2{
+    font-size: 1rem;
+    color: #000000;
+}
+.W-cart-spend p{
+    font-size: 0.8rem;
+    color: #000000;
+}
+.W-cart-spend button{
+    height: 6vh;
+    width: 25%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.W-cart-save{
+    min-height: 20vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+.W-cart-save h2{
+    font-size: 1rem;
+    color: #000000;
+}
+.W-cart-save p{
+    font-size: 0.8rem;
+    color: #000000;
+}
+.W-cart-save button{
+    height: 6vh;
+    width: 25%;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+}
+/* //HEADER */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;    
+}
+.name-dark{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 10%;
+    background-color: #000000;
+}
+.name-dark img{
+    height: 5vh;
+    cursor: pointer;
+}
+.name-light img{
+    height: 5vh;
+    cursor: pointer;
+}
+.links-dark{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 90%;
+    background-color: #000000;
+}
+.links-dark a{
+    font-size: 1.25rem;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+} 
+.links-dark a:hover{
+    text-decoration: underline;
+}
+.links-dark .active{
+    color: #e0aaff;
+    text-decoration: underline;
+}
+/* FOOTER */
+.footer{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+.footer p{
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+@media screen and (max-width:1200px) and (min-width:200px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-align: center;
+    }
+    /* //HEADER */
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8vh;    
+    }
+    .name-dark{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8vh;
+        width: 10%;
+        background-color: #000000;
+    }
+    .name-dark img{
+        height: 5vh;
+        cursor: pointer;
+    }
+    .name-light img{
+        height: 5vh;
+        cursor: pointer;
+    }
+    .links-dark{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 8vh;
+        width: 90%;
+        background-color: #000000;
+    }
+    .links-dark a{
+        font-size: 1rem;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    } 
+    .links-dark a:hover{
+        text-decoration: underline;
+    }
+    .links-dark .active{
+        color: #e0aaff;
+        text-decoration: underline;
+    }
+    /* FOOTER */
+    .footer{
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #000000;
+    }
+    .footer p{
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+}
