@@ -7,12 +7,12 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Signup=()=>{
-    axios.defaults.withcredentials = true
     const A1=()=>toast.warning("All Fields are Mandatory!");
     const A2=()=>toast.error("Invalid Name!");
     const A3=()=>toast.error("Invalid Email!");
     const A4=()=>toast.error("User already Registered!");
     const navigate=useNavigate();
+    const BASE_URL="http://localhost:1818/api/expense/";
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const nameRegex=/^[A-Za-z]/;
     const [user,setUser]=useState({
@@ -42,7 +42,7 @@ const Signup=()=>{
         }
         else{
             try{
-                const response=await axios.post("https://expense-back-end.vercel.app/api/expense/Register",user);
+                const response=await axios.post(`${BASE_URL}Register`,user);
                 setUser({
                     name:"",
                     email:"",
