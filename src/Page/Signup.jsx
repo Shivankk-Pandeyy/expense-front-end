@@ -12,7 +12,7 @@ const Signup=()=>{
     const A3=()=>toast.error("Invalid Email!");
     const A4=()=>toast.error("User already Registered!");
     const navigate=useNavigate();
-    const BASE_URL="http://localhost:1818/api/expense/";
+    const BASE_URL="https://expense-back-end.vercel.app/api/expense/";
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     const nameRegex=/^[A-Za-z]/;
     const [user,setUser]=useState({
