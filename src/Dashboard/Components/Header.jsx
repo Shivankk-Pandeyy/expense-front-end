@@ -4,11 +4,13 @@ import './Component.css';
 import LOGO from './LOGO.svg';
 import axios from 'axios';
 const Header = () => {
+    axios.defaults.withCredentials=true;
+    const BASE_URL="http://localhost:1818/api/expense/";
     const {id}=useParams();
     const navigate=useNavigate();
     const LOGOUT=async()=>{
         try{
-            const response=await axios.get("https://expense-back-end.vercel.app/api/expense/Logout");
+            const response=await axios.get(`${BASE_URL}Logout`);
             //console.log(response);
             navigate("/Login");
         }
