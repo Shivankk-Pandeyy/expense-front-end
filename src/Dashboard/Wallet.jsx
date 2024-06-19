@@ -7,7 +7,7 @@ import axios from "axios"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Wallet = () => {
-    axios.defaults.withcredentials = true
+    const BASE_URL="http://localhost:1818/api/expense/";
     const A1=()=>toast.warning("All fields are mandatory!");
     const A2=()=>toast.error("Invalid Month!");
     const A3=()=>toast.success("EXPENSES ADDED!");
@@ -20,7 +20,7 @@ const Wallet = () => {
     var countExpense=0;
     const getUser=async()=>{
         try{
-            const response=await axios.get("https://expense-back-end.vercel.app/api/expense/SingleUser/"+id);
+            const response=await axios.get(`${BASE_URL}SingleUser/${id}`);
             setEXP(response.data.expenses);
             setSAV(response.data.saving);
         }
@@ -62,7 +62,7 @@ const Wallet = () => {
         }
         else{
             try{
-                const response=await axios.post("https://expense-back-end.vercel.app/api/expense/AddExpense/"+id,spend);
+                const response=await axios.put(`${BASE_URL}AddExpense/${id}`,spend);
                 setSpend({
                     month:month,
                     title:"",
@@ -84,7 +84,7 @@ const Wallet = () => {
         }
         else{
             try{
-                const response=await axios.post("https://expense-back-end.vercel.app/api/expense/AddSaving/"+id,save);
+                const response=await axios.post(`${BASE_URL}AddSaving/${id}`,save);
                 setSave({
                     month:month,
                     title:"",
@@ -99,7 +99,7 @@ const Wallet = () => {
     }
     const deleteExpense=async(m,t,a)=>{
         try{
-            const response=await axios.put("https://expense-back-end.vercel.app/api/expense/DeleteExpense/"+id,m,t,a);
+            const response=await axios.put(`${BASE_URL}DeleteExpense/${id}`,m,t,a);
             return A5();
         }
         catch(err){
@@ -108,7 +108,7 @@ const Wallet = () => {
     }
     const deleteSaving=async(m,t,a)=>{
         try{
-            const response=await axios.put("https://expense-back-end.vercel.app/api/expense/DeleteSaving/"+id,m,t,a);
+            const response=await axios.put(`${BASE_URL}DeleteSaving/${id}`,m,t,a);
             return A5();
         }
         catch(err){
