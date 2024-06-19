@@ -8,13 +8,13 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { useParams } from "react-router-dom"
 const Home = () => {
-    axios.defaults.withcredentials = true
+    const BASE_URL="http://localhost:1818/api/expense/";
     const {id}=useParams();
     const [saving,setSaving]=useState([]);
     const [expense,setExpense]=useState([]);
     const getUser=async()=>{
         try{
-            const response=await axios.get("https://expense-back-end.vercel.app/api/expense/SingleUser/"+id)
+            const response=await axios.get(`${BASE_URL}SingleUser/${id}`);
             setExpense(response.data.expenses);
             setSaving(response.data.saving);
         }
