@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { useParams } from "react-router-dom"
 const Home = () => {
+        axios.defaults.withCredentials=true;
     const BASE_URL="https://expense-back-end.vercel.app/api/expense/";
     const {id}=useParams();
     const [saving,setSaving]=useState([]);
