@@ -10,7 +10,7 @@ const Login=()=>{
     const A1=()=>toast.warning("All Fields are Mandatory!");
     const A2=()=>toast.error("Invalid Password!");
     const A3=()=>toast.error("User doesn't exists!");
-    const BASE_URL="http://localhost:1818/api/expense/";
+    const BASE_URL="https://expense-back-end.vercel.app/api/expense/";
     const navigate=useNavigate();
     const [data,setData]=useState({
         email:"",
