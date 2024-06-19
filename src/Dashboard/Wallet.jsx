@@ -7,6 +7,7 @@ import axios from "axios"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Wallet = () => {
+        axios.defaults.withCredentials=true;
     const BASE_URL="https://expense-back-end.vercel.app/api/expense/";
     const A1=()=>toast.warning("All fields are mandatory!");
     const A2=()=>toast.error("Invalid Month!");
