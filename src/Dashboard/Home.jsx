@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import { useParams } from "react-router-dom"
 const Home = () => {
+    axios.defaults.withcredentials = true
     const {id}=useParams();
     const [saving,setSaving]=useState([]);
     const [expense,setExpense]=useState([]);
