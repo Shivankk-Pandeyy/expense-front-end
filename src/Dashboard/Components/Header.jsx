@@ -5,7 +5,7 @@ import LOGO from './LOGO.svg';
 import axios from 'axios';
 const Header = () => {
     axios.defaults.withCredentials=true;
-    const BASE_URL="http://localhost:1818/api/expense/";
+    const BASE_URL="https://expense-back-end.vercel.app/api/expense/";
     const {id}=useParams();
     const navigate=useNavigate();
     const LOGOUT=async()=>{
