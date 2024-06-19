@@ -7,6 +7,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Signup=()=>{
+        axios.defaults.withCredentials=true;
     const A1=()=>toast.warning("All Fields are Mandatory!");
     const A2=()=>toast.error("Invalid Name!");
     const A3=()=>toast.error("Invalid Email!");
